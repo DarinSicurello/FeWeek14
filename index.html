@@ -7,33 +7,35 @@
     <title>React Static Website App</title>
 </head>
 <body>
-    <header> <!--Header-->
+    <div class="page-wrapper">
+    <header>
         <h1>React Static Website App</h1>
-        <h5>Learning FrontEnd Coding in 2025</h5>
-        <h6>Front End Software Developer March-31st-2025</h6>
-        <h6>Darin Sicurello darin.sicurello@gmail.com</h6> 
+        <h3>Learning FrontEnd Coding in 2025</h3>
+        <h5>Front End Software Developer March-31st-2025</h5>
+        <h5>Darin Sicurello darin.sicurello@gmail.com</h5>
     </header>
 
-    <div class="main-con"> <!--Main Container divided into 2 sections-->
-        <div class="left-section"> 
-            <h2>New List</h2>
-            <button>Input Button</button>
-            <button>Add New Item</button>
-        </div>  
-        <!--divided sections-->
+    <div class="main-con">
+        <div class="left-section">
+            <h2>Left side container<h2>
+            <label for="user-input">New Item:</label>
+            <input type="text" id="user-input" name="user-input" placeholder="Apples..">
+            <button>Submit New Item</button>
+        </div>
         <div class="right-section">
             <h2>My App</h2>
-                <div class="item-container">
-                    <div>Item 1</div>
-                    <div>Item 2</div>
-                    <div>Item 3</div>
-                    <div>Item 4</div>
-                </div>
+            <div class="item-container">
+                <div class="item-box">Item 1</div>
+                <div class="item-box">Item 2</div>
+                <div class="item-box">Item 3</div>
+                <div class="item-box">Item 4</div>
+            </div>
         </div>
     </div>
 
     <footer>
         Darin Sicurello @2025
     </footer>
+</div>
 </body>
 </html>
